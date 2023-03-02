@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales</title>
+</head>
+
+<body>
+    <script>
+        // 1) Realizar un programa que dado 2 números imprima por consola si el primer numero es mayor que el segundo.
+
+        let numero1 = 17;
+        let numero2 = 17;
+
+        // if(numero1 > numero2){
+        //     console.log("Ejercicio 1: " +numero1 +" es mayor que " +numero2)
+        // } else { console.log("Ejercicio 1: " +numero1 +" no es mayor que " +numero2)}
+
+        // 2) Realizar un programa que dado 2 números imprima por consola si los numeros son iguales o si son diferentes.
+
+        // if(numero1 == numero2){
+        //     console.log("Ejercicio 2: Ambos número son iguales")
+        // }
+
+        // 3. Realizar un programa que dado 2 números imprima por consola cual de los 2 numeros es el más grande o si son iguales.
+
+        // if(numero1 > numero2){
+        //     console.log("Ejercicio 3: " +numero1 +" es el mayor")
+        // } else if (numero1<numero2) {
+        //     console.log("Ejercicio 3: " +numero2 +" es el mayor" )} else {
+        //     console.log("Ejercicio 3: Ambos números son iguales")
+        // }
+
+        // 4. Realizar un programa que dado 3 números imprima por pantalla cual de los 3 es el mas chico.
+
+        let numero3 = 2200;
+        let numero4 = 400;
+        let numero5 = 400;
+
+        // if(numero3 < numero4){
+        //     if(numero3 < numero5){
+        //         console.log(numero3 +" es más bajo que " +numero4 +" y " +numero5)
+        //     } else { 
+        //         console.log(numero5 +" es más bajo que " +numero3 +" y " +numero4)
+        //     }
+        // } else if(numero4 < numero5) {
+        //     if(numero4 < numero3){
+        //         console.log(numero4 +" es más bajo que " +numero3 +" y " +numero5)
+        //     } else {
+        //         console.log(numero3 +" es más bajo que " +numero4 +" y " +numero6)
+        //     }
+        //     console.log(numero5 +" es más bajo que " +numero3 +" y " +numero4)
+        // } 
+
+        // if(numero3 < numero4 &&numero3 <  numero5){
+        //     console.log(numero3 +" es más bajo que " +numero4 +" y " +numero5)
+        // } else if(numero4 < numero5){
+        //     console.log(numero4 +" es más bajo que " +numero3 +" y " +numero5)
+        // } else {
+        //     console.log(numero5 +" es más bajo que " +numero3 +" y " +numero4)
+        // }
+
+        // 5. Realizar un programa que dado 2 objetos representando personas con las propiedades nombre, edad y altura imprima por pantalla cual de las 2 personas es la mas alta y cual es la de mayor edad.
+
+        const persona1 = {
+            nombre: "Pablo",
+            edad: 40,
+            altura: 1.67
+        }
+
+        let persona2 = {
+            nombre: "Gonzalo",
+            edad: 33,
+            altura: 1.72
+        }
+
+        // if(persona1.altura > persona2.altura){
+        //     console.log(persona1.nombre +" es más alto que " +persona2.nombre)
+        // } else {
+        //     console.log(persona2.nombre +" es más alto que " +persona1.nombre)
+        // }
+
+        // if(persona1.edad > persona2.edad){
+        //     console.log(persona1.nombre +" es mayor que " +persona2.nombre)
+        // } else {
+        //     console.log(persona2.nombre +" es mayor que " +persona2.nombre)
+        // }
+
+        // 6. Realizar un programa que permita ingresar por pantalla tu nombre, edad, altura, visión y permita determinar si estas capacitado para conducir. La persona deberá cumplir con una edad mínima de 18 años, medir mas de 150cm y tener una visión de 8 de 10 como mínimo.
+
+        // const edadLegal = 18
+        // const estaturaMinima = 150
+        // const visionMinima = 8
+        // let nombre1 = prompt("Ingrese su nombre")
+        // let edad1 = prompt("Ingrese su edad")
+        // let altura1 = prompt("Ingrese su estatura")
+        // let vision1 = prompt("Ingrese su visión")
+        // const añosRestantes = edad1 - edadLegal
+
+        // const persona3 = {
+        //     nombre1,
+        //     edad1,
+        //     altura1,
+        //     vision1
+        // }
+
+        // if(persona3.edad1 >= edadLegal){
+        //     if(persona3.altura1 >= estaturaMinima){
+        //         if(persona3.vision1 >= visionMinima){
+        //             console.log("Usted está capacitado para conducir")
+        //         } else { 
+        //             console.log("Usted no tiene la vision adecuada para conducir")
+        //         }
+        //     } else {
+        //         console.log("Usted no tiene la estatura mínima para conducir")
+        //     }
+        // } else { 
+        //     console.log("Usted debe cumplir 18 años para poder conducir. Vuelva a intentarlo en " +añosRestantes +" años.")
+        // }
+
+        // 7. Realizar un programa que permita el ingreso de los siguientes datos: Nombre, pase (vip o normal), si posee entrada (si o no, s o n, true o false). Las personas que posean tu mismo nombre tienen ingreso libre así como también los que posean un pase vip, mostrar un mensaje de bienvenida. Si posee entrada preguntar si desea utilizarla, en caso afirmativo mostrar mismo mensaje de bienvenida. Y por ultimo de no tener el mismo nombre o poseer un pase vip o entrada, preguntar si desea comprar, caso afirmativo solicitar dinero disponible, si posee $1000 o mas, mostrar mensaje de venta de entrada y bienvenida, caso contrario mostrar mensaje de rechazo de venta, y en caso contrario a no querer comprar, mostrar mensaje de despedida.
+
+        // const nombreAfortunado = "Sandra"
+        // const valorEntrada = 1000
+
+        // let nombre2 = prompt("Ingrese su nombre")
+        // let paseVIP = prompt("Posee pase VIP?"); 
+
+        // let poseeEntrada;
+        // let deseaIngresar;
+        // let dineroDisponible;
+
+        // let mensajeBienvenida = "Bienvenido al Club"
+        // let mensajeCompraExitosa = "Usted ha comprado una entrada."
+        // let mensajeCompraRechazada = "No tiene suficientes fondos."
+        // let mensajeDespedida = "Hasta la vista, baby"
+
+        // const persona4 = {
+        //     nombre: nombre2,
+        //     pase: paseVIP,
+        //     entrada: poseeEntrada,
+        //     dinero: dineroDisponible
+        // }
+
+        // if (persona4.nombre == nombreAfortunado || persona4.pase == "s") {
+        //     console.log(mensajeBienvenida)
+        // } else {
+        //     persona4.entrada = prompt("Posee entrada?")
+        //     if (persona4.entrada == "s") {
+        //         console.log(mensajeBienvenida)
+        //     } else {
+        //         deseaIngresar = prompt("Desea comprar una entada")
+        //         if (deseaIngresar == "s") {
+        //             dineroDisponible = prompt("De cuánto dinero dispone?")
+        //             if (dineroDisponible >= 1000) {
+        //                 console.log(mensajeCompraExitosa + ". " + mensajeBienvenida)
+        //             } else {
+        //                 console.log(mensajeCompraRechazada)
+        //             }
+        //         } else {
+        //             console.log(mensajeDespedida)
+        //         }
+        //     }
+        // }
+
+    // 8. Realizar un juego de adivinanza estableciendo un valor entre 1 y 10 en una variable llamada numeroIncognita y que permita en 3 intentos adivinar el numero. El usuario deberá ingresar un numero del 1 al 10 por pantalla en 3 intentos el cual se deberá guardar en una variable llamada numeroIngresado, y en cada intento deberás mostrarle un mensaje al usuario diciendo: “el numero ingresado es mayor, vuelve a intentarlo” o “el numero ingresado es menor, vuelve a intentarlo” o en caso de adivinar, un mensaje que diga: “Ganaste, haz adivinado el numero.” No te preocupes si usas mucho código repetido, mas adelante veraz como realizar este juego de manera mas eficiente.
+
+    // let numeroIncognita = 4;
+    // let numeroIngresado = prompt("Ingrese un número del 1 al 10 (intento N°1)")
+    // let intento = 0
+
+    // while(intento <= 3)
+    // {
+    //     switch(true){
+    //         case numeroIngresado == numeroIncognita:
+    //             alert("Ganaste!")
+    //             intento = 4
+    //             break
+    //         case numeroIngresado < numeroIncognita:
+    //             intento++
+    //             if(intento < 3)
+    //             {
+    //                 numeroIngresado = prompt("El número es menor. Vuelva a intentarlo:")
+    //             }
+    //             else
+    //             {
+    //                 alert("Lo siento. Usaste todos tus intentos") 
+    //                 intento++
+    //             }
+    //             break
+    //         case numeroIngresado > numeroIncognita: 
+    //             intento +=1
+    //             if(intento < 3)
+    //             {
+    //                 numeroIngresado = prompt("El número es mayot. Vuelva a intentarlo:")
+    //             }
+    //             else
+    //             {
+    //                 alert("Lo siento. Usaste todos tus intentos")
+    //                 intento++
+    //             }
+    //             break 
+    //     }
+    // } 
+    
+    // 9. Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), adolescente(13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.
+
+    // let edad9 = prompt("Ingrese su edad:")
+
+    // switch(true)
+    // {
+    //     case edad9 <= 12:
+    //         alert("Eres un infante.")
+    //         break
+
+    //     case edad9 >= 13 && edad9 <=18:
+    //         alert("Eres un adolescente.")
+    //         break
+
+    //     case edad9 >= 19 && edad9 <=45:
+    //         alert("Eres un mayor joven")
+    //         break
+
+    //     case edad9 >=46:
+    //         if(edad9 < 100)
+    //         {
+    //             alert("Cómo que a los 45 se es anciano???")
+    //         }
+    //         else
+    //         {
+    //             confirm("En serio tienes esa edad?")
+    //         }
+    //         break
+    // }
+
+    // 10. Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
+
+    let jugadorUNO = prompt("Ingrese su elemento:")
+    let jugadorDOS = prompt("Ingrese el elemento de su contrincante:")
+
+    switch(true)
+    {
+        case jugadorUNO == "piedra":
+
+            if(jugadorDOS == "piedra")
+            {
+                alert("Juego empatado")
+            }
+            else if(jugadorDOS == "papel")
+            {
+                alert("Gana el jugadorDOS")
+            }
+            else if(jugadorDOS == "tijera")
+            {
+                alert("Gana el jugadorUNO")
+            } 
+            else
+            {
+                alert("El jugadorDOS hizo trampa")
+            }
+            break
+
+        case jugadorUNO == "papel": 
+
+            if(jugadorDOS == "piedra")
+                {
+                    alert("Gana el jugadorUNO")
+                }
+                else if(jugadorDOS == "papel")
+                {
+                    alert("Juego empatado")
+                }
+                else if(jugadorDOS == "tijera")
+                {
+                    alert("Gana el jugadorDOS")
+                } 
+                else
+                {
+                    alert("El jugadorDOS hizo trampa")
+                }
+                break
+
+        case jugadorUNO == "tijera":
+
+            if(jugadorDOS == "piedra")
+                {
+                    alert("Gana el jugadorDOS")
+                }
+                else if(jugadorDOS == "papel")
+                {
+                    alert("Gana el jugadorUNO")
+                }
+                else if(jugadorDOS == "tijera")
+                {
+                    alert("Juego empatado")
+                } 
+                else
+                {
+                    alert("El jugadorDOS hizo trampa")
+                }
+                break
+        
+        default:
+
+            alert("El jugadorUNO hizo trampa")
+                
+    }
+
+    // 11. Realizar un programa que permita el ingreso de un color y utilizando “switch” mostrar por pantalla los siguientes mensajes según las opciones: Blanco o Negro: Falta de color, Verde: El color de la naturaleza, Azul: El color del agua, Amarillo: El color del sol, Rojo: El color del fuego, Marrón: el color de la tierra, y para cualquier otro valor: Excelente elección, no lo teníamos pensado.
+
+    // let color = prompt("Elija un color:")
+
+    // switch(color)
+    // {
+    //     case "blanco" || "negro":
+    //         alert("Falta de color")
+    //         break
+
+    //     case "verde":
+    //         alert("El color de la naturaleza")
+    //         break
+
+    //     case "azul": 
+    //         alert("El color del agua")
+    //         break
+
+    //     case "amarillo": 
+    //         alert("El color del Sol")
+    //         break
+
+    //     case "rojo": 
+    //         alert("El color del fuego")
+    //         break
+
+    //     case "marrón":
+    //         alert("El color de la tierra")
+    //         break
+
+    //     default: 
+    //         alert("Excelente idea! No lo teníamos pensado")
+    //         break
+    // }
+
+    // 12. Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. Según sea la operación ingresada (suma, resta, multiplicación, división) el programa deberá mostrar en pantalla un mensaje junto con el resultado. En caso de haber elegido división realizar la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
+
+    // let numberA = parseInt(prompt("Ingrese un número"))
+    // let numberB = parseInt(prompt("Ingrese otro número"))
+    // let operation = prompt("Ingrese la operación que desea realizar")
+
+    // switch(operation)
+    // {
+    //     case "suma": 
+    //         alert(numberA + numberB)
+    //         break
+
+    //     case "resta":
+    //         alert(numberA - numberB)
+    //         break
+
+    //     case "multiplicación":
+    //         alert(numberA * numberB)
+    //         break
+
+    //     case "división": 
+    //         if(numberA == 0)
+    //         {
+    //             alert("Error. No se puede dividir el cero")
+    //         }
+    //         else 
+    //         {
+    //             alert(numberA / numberB)
+    //         }
+    // }
+
+    // 13. Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
+
+    // let dni = prompt("Ingrese su dni sin puntos")
+    // let tuNombre = prompt("Ingrese su apellido")
+    // const usuario = 
+    // {
+    //     dni: dni,
+    //     apellido: tuNombre
+    // }
+    // let confirmation = confirm("Sus datos son correctos?: " + dni +" " +tuNombre)
+
+    // if(confirmation == true)
+    // {
+    //     console.log("Registro exitoso")
+    //     console.table(usuario)
+    // }
+    // else
+    // {
+    //     console.log("Lo siento. Inténtelo en un mes.")
+    //     console.log("Qué esperabas? Esto es administración pública...")
+    // }
+
+    </script>
+</body>
+
+</html>
